@@ -1,0 +1,74 @@
+<style>
+    .content {
+        display: flex;
+        margin: 100px auto 100px ;
+        padding: 0 16px;
+        max-width: 960px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-box {
+        width: 300px;
+        padding: 50px;
+        background: #e8e7ec;
+        text-align: center;
+    }
+
+    .form-title {
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .form-box input[type="text"], .form-box input[type="password"], .form-box button[type="submit"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        border: 2px solid #d35757;
+        padding: 14px 10px;
+        width: 240px;
+        outline: none;
+        border-radius: 7px;
+        transition: 0.25s;
+    }
+
+    .form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
+        width: 260px;
+        border-color: #ffffff;
+    }
+
+    .form-box button[type="submit"] {
+        border: 0;
+        background: #1da55f;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #1da55f;
+        padding: 14px 40px;
+        outline: none;
+        color: white;
+        border-radius: 7px;
+        transition: 0.25s;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .form-box button[type="submit"]:hover {
+        background: none;
+        color: black;
+
+    }
+</style>
+
+<div class="content" role="main">
+    <form action="index.html" class="form-box animated fadeInUp">
+        <h1 class="form-title">Login</h1>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="submit">
+            Entrar
+        </button>
+    </form>
+</div>
